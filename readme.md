@@ -1,6 +1,7 @@
 #URL Shortener Exercise
 
 ##Installation
+- Create MySQL database.
 - `git clone`
 - Check if *.env* file exist. If not - create it from *.env.example* file.
 - Check configuration in file *.env*
@@ -30,6 +31,8 @@ Or you can use Apache web server instead,
 - app/Http/Controllers/UriController.php - controller
 - app/Services/ShortenerService.php - service for creating short urls.
 - resources/views/*.blade.php - views
+
+If you made changes in .env after installation it may be necessary to run `php artisan config:cache`.
 
 ##Testing
 
