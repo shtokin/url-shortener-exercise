@@ -2,15 +2,14 @@
 
 ##Installation
 - Create MySQL database.
-- `git clone`
-- Check if *.env* file exist. If not - create it from *.env.example* file.
-- Check configuration in file *.env*
-- `composer install`
-- `php artisan key:generate`.
-- `php artisan migrate`.
+- Run `git clone` from cmd.
+- Check if .env file exist. If not - create it from .env.example file.
+- Check configuration in file .env.
+- Run `composer install` from cmd.
+- Run `php artisan key:generate` from cmd.
+- Run `php artisan migrate` from cmd.
 - Run `php artisan serve` to use PHP's built-in development server. 
-By default it starts at localhost:8000.
-Or you can use Apache web server instead,
+By default it starts at localhost:8000,  you can use Apache web server instead.
 
 ##Environment requirements
 
@@ -32,7 +31,7 @@ Or you can use Apache web server instead,
 - app/Services/ShortenerService.php - service for creating short urls.
 - resources/views/*.blade.php - views
 
-If you made changes in .env after installation it may be necessary to run `php artisan config:cache`.
+If you make changes in .env after installation it is necessary to run `php artisan config:cache`.
 
 ##Testing
 
@@ -41,4 +40,4 @@ Test list:
 - tests/Unit/ShortenerServiceTest.php
 
 
-Run `vendor/bin/phpunit` for Unit Tests
+Run `vendor/bin/phpunit` for Unit Tests.
